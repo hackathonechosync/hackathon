@@ -1,3 +1,135 @@
+/* =================================
+   Anti-Kuddus Protocol v2.0 Theme
+================================= */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#0f172a;
+
+    --success:#16a34a;
+    --danger:#dc2626;
+    --warning:#f59e0b;
+
+    --background:#f4f7fc;
+    --surface:#ffffff;
+
+    --text:#1f2937;
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --radius:12px;
+
+    --shadow:0 5px 15px rgba(0,0,0,.08);
+
+    --transition:.3s;
+
+}
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    transition:var(--transition);
+}
+.btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:var(--radius);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+    opacity:.9;
+
+}
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:20px;
+
+}
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+}
 /* Google Font */
 
 *{
