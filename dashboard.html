@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>Anti-Kuddus Protocol</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="complaint.html">Complaint</a></li>
+        <li><a href="seat-planner.html">Seat Planner</a></li>
+        <li><a href="sos.html">SOS</a></li>
+    </ul>
+
+    <a href="index.html" class="login-btn">Logout</a>
+
+</nav>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+    <h1>Welcome Back 👋</h1>
+    <p>Anonymous Student</p>
+
+    <!-- Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="complaintCount">0</h2>
+            <p>Total Complaints</p>
+        </div>
+
+        <div class="card">
+            <h2 id="warningCount">0</h2>
+            <p>Warnings</p>
+        </div>
+
+        <div class="card">
+            <h2 id="strikeLeft">3</h2>
+            <p>Strikes Left</p>
+        </div>
+
+    </div>
+
+    <!-- Progress -->
+
+    <h3>Warning Progress</h3>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <p id="progressText">0 / 3 Warnings</p>
+
+    <h2 id="statusMessage"></h2>
+
+    <!-- Search & Filter -->
+
+    <div class="toolbar">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search complaint...">
+
+        <select id="filterCategory">
+
+            <option value="All">All Categories</option>
+            <option value="Bribe">Bribe</option>
+            <option value="Tiffin Theft">Tiffin Theft</option>
+            <option value="Syllabus Bloat">Syllabus Bloat</option>
+            <option value="Washroom Tax">Washroom Tax</option>
+            <option value="Others">Others</option>
+
+        </select>
+
+    </div>
+
+    <!-- Complaint Table -->
+
+    <section class="recent-complaints">
+
+        <h2>Recent Complaints</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                    <th>Edit</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="complaintTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</section>
+
+<!-- JavaScript -->
+
+<script src="js/utils.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/analytics.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        <h2>📊 Analytics Dashboard</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="complaint.html">Complaint</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="analytics.html" class="active">Analytics</a></li>
+    </ul>
+
+</nav>
+
+<section class="analytics">
+
+    <h1>Complaint Analytics</h1>
+
+    <div class="chart-container">
+
+        <div class="chart-card">
+
+            <h2>Complaint Categories</h2>
+
+            <canvas id="pieChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>Category Comparison</h2>
+
+            <canvas id="barChart"></canvas>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/utils.js"></script>
+<script src="js/analytics.js"></script>
+
+</body>
+</html>
