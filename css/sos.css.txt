@@ -1,0 +1,238 @@
+/* ===========================
+   SOS Page
+=========================== */
+
+.sos-container{
+
+    width:90%;
+    max-width:900px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+}
+
+.sos-container h1{
+
+    font-size:40px;
+
+    color:#dc2626;
+
+    margin-bottom:10px;
+
+}
+
+.sos-container p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   SOS Button
+=========================== */
+
+#sosBtn{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    animation:pulse 2s infinite;
+
+}
+
+#sosBtn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Pulse Animation */
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(220,38,38,.7);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 35px rgba(220,38,38,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(220,38,38,0);
+
+    }
+
+}
+
+/* ===========================
+   Location
+=========================== */
+
+.location-box{
+
+    margin-top:40px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.location-box h2{
+
+    margin-bottom:10px;
+
+}
+
+#mapLink{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+}
+
+/* ===========================
+   Contacts
+=========================== */
+
+.contacts{
+
+    margin-top:40px;
+
+}
+
+.contact-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    margin:15px 0;
+
+    padding:15px 20px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact-card a{
+
+    text-decoration:none;
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+}
+
+/* ===========================
+   History
+=========================== */
+
+.history{
+
+    margin-top:40px;
+
+    text-align:left;
+
+}
+
+.history ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.history li{
+
+    background:#fff;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    #sosBtn{
+
+        width:180px;
+
+        height:180px;
+
+        font-size:22px;
+
+    }
+
+    .contact-card{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+}
