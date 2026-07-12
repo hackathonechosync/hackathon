@@ -1,0 +1,245 @@
+/* ===========================
+   Seat Planner
+=========================== */
+
+.planner{
+    padding:40px 8%;
+}
+
+.planner h1{
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+#studentForm{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+#studentForm input{
+
+    flex:1;
+
+    min-width:220px;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+#studentForm button{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+#studentForm button:hover{
+
+    background:#1D4ED8;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+th{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+    text-align:center;
+
+}
+
+tr:hover{
+
+    background:#F8FAFC;
+
+}
+
+@media(max-width:768px){
+
+    #studentForm{
+
+        flex-direction:column;
+
+    }
+
+}
+table button{
+
+    background:#EF4444;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+table button:hover{
+
+    background:#DC2626;
+
+}
+.classroom{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.seat{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    min-height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.board{
+
+    margin-top:30px;
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+}
+#searchStudent{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:20px 0;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+.edit-btn{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.edit-btn:hover{
+
+    background:#1D4ED8;
+
+}
+.teacher-desk{
+    width:250px;
+    margin:30px auto 15px;
+    background:#8B5CF6;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.board{
+    width:100%;
+    background:#1F2937;
+    color:white;
+    text-align:center;
+    padding:18px;
+    border-radius:10px;
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+}
