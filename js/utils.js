@@ -1,0 +1,87 @@
+// ======================================
+// Utils.js
+// Local Storage Helper Functions
+// ======================================
+
+// Get all complaints from Local Storage
+function getComplaints() {
+
+    const data = localStorage.getItem("complaints");
+
+    if (data) {
+        return JSON.parse(data);
+    }
+
+    return [];
+
+}
+
+// Save all complaints
+function saveComplaints(complaints) {
+
+    localStorage.setItem(
+        "complaints",
+        JSON.stringify(complaints)
+    );
+
+}
+
+// Delete complaint by ID
+function deleteComplaint(id) {
+
+    let complaints = getComplaints();
+
+    complaints = complaints.filter(function (item) {
+
+        return item.id !== id;
+
+    });
+
+    saveComplaints(complaints);
+
+}
+
+// Update complaint
+function updateComplaint(id, newDescription) {
+
+    const complaints = getComplaints();
+
+    const complaint = complaints.find(function (item) {
+
+        return item.id === id;
+
+    });
+
+    if (complaint) {
+
+        complaint.description = newDescription;
+
+        saveComplaints(complaints);
+
+    }
+
+}
+
+// Show Toast Notification
+function showToast(message) {
+
+    const toast = document.getElementById("toast");
+
+    if (!toast) {
+
+        alert(message);
+        return;
+
+    }
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(function () {
+
+        toast.classList.remove("show");
+
+    }, 2500);
+
+}
