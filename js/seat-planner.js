@@ -100,21 +100,25 @@ function renderStudents() {
 
             <td>
 
-                <button class="edit-btn">
+              <button
+                  class="edit-btn"
+                  onclick="editStudent(${student.id})">
 
-                    Edit
+                  Edit
 
-                </button>
+               </button>  
 
             </td>
 
             <td>
 
-                <button class="delete-btn">
+               <button
+                   class="delete-btn"
+                  onclick="deleteStudent(${student.id})">
 
-                    Delete
+                 Delete
 
-                </button>
+               </button> 
 
             </td>
 
