@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>Analytics | Anti-Kuddus Protocol</title>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+
+
+
+<link rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+
+
+<link rel="stylesheet"
+
+href="css/style.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!-- Navbar -->
+
+
+<nav>
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h2>
+
+Anti-Kuddus
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<ul class="nav-links">
+
+
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="complaint.html">
+
+Complaint
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="analytics.html">
+
+Analytics
+
+</a>
+
+</li>
+
+
+
+
+<li id="adminMenu">
+
+
+<a href="admin.html">
+
+Admin
+
+</a>
+
+
+</li>
+
+
+
+
+<li>
+
+<a href="sos.html">
+
+SOS
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+
+<button
+
+class="btn"
+
+onclick="logoutUser()">
+
+
+Logout
+
+
+</button>
+
+
+</li>
+
+
+
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- Analytics Header -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h1>
+
+📊 Complaint Analytics
+
+</h1>
+
+
+
+<p>
+
+System performance and complaint statistics.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Statistics -->
+
+
+<section class="container">
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Total Complaint
+
+</h3>
+
+
+<h1 id="total">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Pending
+
+</h3>
+
+
+<h1 id="pending">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Resolved
+
+</h3>
+
+
+<h1 id="resolved">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Chart -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+Complaint Category Analysis
+
+</h2>
+
+
+
+
+<canvas id="complaintChart">
+
+
+</canvas>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+
+
+<!-- Chart Library -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+<script src="js/utils.js"></script>
+
+
+<script src="js/analytics.js"></script>
+
+
+
+
+</body>
+
+
+</html>

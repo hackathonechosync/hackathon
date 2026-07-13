@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Anti-Kuddus Protocol</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- Navbar -->
+
+
+<nav>
+
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>
+
+Anti-Kuddus
+
+</h2>
+
+</div>
+
+
+
+<ul class="nav-links">
+
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="complaint.html">
+
+Complaint
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="analytics.html">
+
+Analytics
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="sos.html">
+
+SOS
+
+</a>
+
+</li>
+
+
+<li>
+
+<button class="btn"
+
+onclick="logoutUser()">
+
+Logout
+
+</button>
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+
+<!-- Admin Header -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h1>
+
+👑 Admin Control Panel
+
+</h1>
+
+
+<p>
+
+Manage complaints and emergency alerts.
+
+</p>
+
+
+
+<button
+
+class="btn"
+
+onclick="exportPDF()">
+
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Export PDF Report
+
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Complaint Section -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+📋 All Complaints
+
+</h2>
+
+
+
+<div style="overflow-x:auto;">
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>ID</th>
+
+<th>User</th>
+
+<th>Category</th>
+
+<th>Priority</th>
+
+<th>Status</th>
+
+<th>File</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+<tbody id="adminTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SOS Section -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+🚨 SOS Alerts
+
+</h2>
+
+
+
+<h3>
+
+Total SOS:
+
+<span id="totalSOS">
+
+0
+
+</span>
+
+
+</h3>
+
+
+
+
+
+<div style="overflow-x:auto;">
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>User</th>
+
+<th>Role</th>
+
+<th>Time</th>
+
+<th>Location</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="sosAdminTable">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Toast -->
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+
+
+<!-- Libraries -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+
+
+<!-- Scripts -->
+
+
+<script src="js/utils.js"></script>
+
+<script src="js/admin.js"></script>
+
+
+
+</body>
+
+
+</html>

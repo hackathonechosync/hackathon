@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seat Planner | Anti-Kuddus Protocol</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- Navbar -->
+
+
+<nav>
+
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>
+
+Anti-Kuddus
+
+</h2>
+
+</div>
+
+
+
+<ul class="nav-links">
+
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="complaint.html">
+
+Complaint
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="seat-planner.html">
+
+Seat Planner
+
+</a>
+
+</li>
+
+
+<li id="adminMenu">
+
+<a href="admin.html">
+
+Admin
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<button class="btn"
+onclick="logoutUser()">
+
+Logout
+
+</button>
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h1>
+
+Classroom Seat Planner
+
+</h1>
+
+
+<p>
+
+Create and manage student seating arrangement.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Add Student -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+Add Student
+
+</h2>
+
+
+
+<input
+
+type="text"
+
+id="studentName"
+
+placeholder="Enter Student Name">
+
+
+
+<button
+
+class="btn"
+
+id="addSeat">
+
+Add Seat
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Seat Grid -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+Classroom Layout
+
+</h2>
+
+
+
+<div id="seatGrid"
+
+class="cards">
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+<script src="js/utils.js"></script>
+
+<script src="js/seat.js"></script>
+
+
+
+</body>
+
+</html>

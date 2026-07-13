@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Complaint | Anti-Kuddus Protocol</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ==========================
+     Navbar
+========================== -->
+
+
+<nav>
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h2>
+
+Anti-Kuddus
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<ul class="nav-links">
+
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="complaint.html">
+
+Complaint
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="analytics.html">
+
+Analytics
+
+</a>
+
+</li>
+
+
+
+<li id="adminMenu">
+
+
+<a href="admin.html">
+
+Admin
+
+</a>
+
+
+</li>
+
+
+
+<li>
+
+<button
+
+class="btn"
+
+onclick="logoutUser()">
+
+Logout
+
+</button>
+
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- ==========================
+     Complaint Section
+========================== -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h1>
+
+<i class="fa-solid fa-file-circle-exclamation"></i>
+
+Submit Anonymous Complaint
+
+</h1>
+
+
+
+<p>
+
+Your complaint will be recorded securely.
+
+</p>
+
+
+
+
+
+
+<form id="complaintForm">
+
+
+
+
+
+<!-- Category -->
+
+
+<label>
+
+Complaint Category
+
+</label>
+
+
+
+<select
+
+id="category"
+
+required>
+
+
+<option value="">
+
+Select Category
+
+</option>
+
+
+
+<option>
+
+Harassment
+
+</option>
+
+
+
+<option>
+
+Academic Issue
+
+</option>
+
+
+
+<option>
+
+Teacher Issue
+
+</option>
+
+
+
+<option>
+
+Classroom Problem
+
+</option>
+
+
+
+<option>
+
+Other
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+
+<!-- Priority -->
+
+
+<label>
+
+Priority Level
+
+</label>
+
+
+
+<select
+
+id="priority"
+
+required>
+
+
+
+<option>
+
+Low
+
+</option>
+
+
+<option>
+
+Medium
+
+</option>
+
+
+<option>
+
+High
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+<!-- Description -->
+
+
+<label>
+
+Complaint Description
+
+</label>
+
+
+
+<textarea
+
+id="description"
+
+placeholder="Write your complaint here..."
+
+required></textarea>
+
+
+
+
+
+
+
+
+<!-- File Upload -->
+
+
+<label>
+
+Upload Evidence (Image/PDF)
+
+</label>
+
+
+
+<input
+
+type="file"
+
+id="file"
+
+accept="image/*,.pdf">
+
+
+
+
+
+
+
+<!-- Submit -->
+
+
+<button
+
+type="submit"
+
+class="btn">
+
+
+<i class="fa-solid fa-paper-plane"></i>
+
+
+Submit Complaint
+
+
+</button>
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Toast -->
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+
+
+<!-- JavaScript -->
+
+
+<script src="js/utils.js"></script>
+
+<script src="js/complaint.js"></script>
+
+
+
+</body>
+
+
+</html>

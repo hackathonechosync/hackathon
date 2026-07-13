@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SOS Emergency | Anti-Kuddus Protocol</title>
+
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<!-- SOS CSS -->
+
+<link rel="stylesheet" href="css/sos.css">
+
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ==========================
+     Navbar
+========================== -->
+
+
+<nav>
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h2>
+
+Anti-Kuddus
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<ul class="nav-links">
+
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="complaint.html">
+
+Complaint
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="analytics.html">
+
+Analytics
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="sos.html">
+
+SOS
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<button
+
+class="btn"
+
+onclick="logoutUser()">
+
+
+Logout
+
+
+</button>
+
+</li>
+
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- ==========================
+     SOS Section
+========================== -->
+
+
+<section class="container">
+
+
+<div class="sos-card">
+
+
+<h1>
+
+🚨 Emergency SOS
+
+</h1>
+
+
+
+<p>
+
+Press the button if you need immediate help.
+
+Your alert will be sent to the admin panel.
+
+</p>
+
+
+
+
+
+
+<button
+
+id="sosButton"
+
+class="sos-btn">
+
+
+SOS
+
+
+</button>
+
+
+
+
+
+
+<p id="status">
+
+
+Waiting for emergency request...
+
+
+</p>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+     Emergency Contact
+========================== -->
+
+
+<section class="container">
+
+
+<div class="card emergency-box">
+
+
+<h2>
+
+📞 Emergency Contact
+
+</h2>
+
+
+<p>
+
+Call emergency service immediately.
+
+</p>
+
+
+
+
+<a
+
+href="tel:999"
+
+class="call-btn">
+
+
+<i class="fa-solid fa-phone"></i>
+
+
+Call Emergency
+
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+     SOS History
+========================== -->
+
+
+<section class="container">
+
+
+<div class="card">
+
+
+<h2>
+
+🚨 SOS History
+
+</h2>
+
+
+
+
+
+<div style="overflow-x:auto;">
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+
+User
+
+</th>
+
+
+<th>
+
+Time
+
+</th>
+
+
+<th>
+
+Location
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="sosTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Toast -->
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+
+
+<!-- Scripts -->
+
+
+<script src="js/utils.js"></script>
+
+
+<script src="js/sos.js"></script>
+
+
+
+</body>
+
+
+</html>
