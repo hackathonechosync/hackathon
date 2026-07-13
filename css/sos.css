@@ -1,0 +1,357 @@
+/* ==========================================
+   Anti-Kuddus Protocol v2.0
+   SOS Emergency Styling
+========================================== */
+
+
+/* ==========================
+   SOS Main Card
+========================== */
+
+
+.sos-card{
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+    border-radius:25px;
+
+
+    padding:50px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.3);
+
+
+}
+
+
+
+
+.sos-card h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+.sos-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* ==========================
+   SOS Button
+========================== */
+
+
+.sos-btn{
+
+
+    width:200px;
+
+
+    height:200px;
+
+
+    border-radius:50%;
+
+
+    border:none;
+
+
+    margin:40px;
+
+
+    background:#ef4444;
+
+
+    color:white;
+
+
+    font-size:55px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    box-shadow:
+
+    0 0 30px rgba(239,68,68,.8);
+
+
+    animation:
+
+    pulse 1.5s infinite;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.sos-btn:hover{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+.sos-btn:active{
+
+
+    transform:scale(.9);
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   SOS Animation
+========================== */
+
+
+@keyframes pulse{
+
+
+0%{
+
+
+box-shadow:
+
+0 0 0 0 rgba(239,68,68,.7);
+
+
+}
+
+
+
+70%{
+
+
+box-shadow:
+
+0 0 0 40px rgba(239,68,68,0);
+
+
+}
+
+
+
+100%{
+
+
+box-shadow:
+
+0 0 0 0 rgba(239,68,68,0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Status Text
+========================== */
+
+
+#status{
+
+
+font-size:18px;
+
+
+font-weight:500;
+
+
+color:#facc15;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Emergency Contact
+========================== */
+
+
+.emergency-box{
+
+
+text-align:center;
+
+
+}
+
+
+
+.emergency-box h2{
+
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.call-btn{
+
+
+display:inline-block;
+
+
+margin-top:20px;
+
+
+padding:14px 30px;
+
+
+background:#22c55e;
+
+
+border-radius:12px;
+
+
+color:white;
+
+
+font-size:18px;
+
+
+font-weight:600;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.call-btn:hover{
+
+
+transform:translateY(-3px);
+
+
+background:#16a34a;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:768px){
+
+
+
+.sos-card{
+
+
+padding:30px;
+
+
+}
+
+
+
+.sos-card h1{
+
+
+font-size:32px;
+
+
+}
+
+
+
+.sos-btn{
+
+
+width:140px;
+
+
+height:140px;
+
+
+font-size:40px;
+
+
+margin:30px;
+
+
+}
+
+
+
+}
